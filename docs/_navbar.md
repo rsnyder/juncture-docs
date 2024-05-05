@@ -1,6 +1,4 @@
 <!-- _navbar.md -->
 
-Docs folder
-
-* [En](/)
-* [chinese](/zh-cn/)
+* [xx](/)
+* [yy](/zh-cn/)
