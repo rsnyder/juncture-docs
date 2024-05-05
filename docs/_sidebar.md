@@ -3,5 +3,5 @@
 Docs folder
 
 * [Home](/)
-* [Getting Started](getting-started)
-* [Quick Start](quick-start/)
+* [Getting Started](/getting-started)
+* [Quick Start](/quick-start/)
