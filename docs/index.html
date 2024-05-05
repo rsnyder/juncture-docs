@@ -16,7 +16,10 @@
       repo: '',
       loadNavbar: true,
       loadSidebar: true,
-      routerMode: 'history', // default: 'hash'
+      routerMode: 'history', // default: 'hash',
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md', // See #301
+      }
     }
   </script>
   <!-- Docsify v4 -->

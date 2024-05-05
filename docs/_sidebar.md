@@ -2,4 +2,4 @@
 
 * [Home](/)
 * [Getting Started](getting-started)
-* [Quick Start](quick-start)
+* [Quick Start](quick-start/)
