@@ -28,11 +28,11 @@ Juncture is a tool for creating and displaying interactive web pages.  Juncture 
     - [flyto](#flyto) - Uses a text link to trigger a `flyto` action on a map viewer
     - [play](#play) - Uses a text link to trigger to start an audio or video playback at a specified time
 
-## Creating and Modifying Juncture Essays `#editing`
+## Creating and Modifying Juncture Essays
 
 Juncture essays are defined using plain Markdown files stored in GitHub.  The essay Markdown files may be created and modified using the built-in GitHub web editor or the editor provided in the [Juncture Workbench](https://v3.juncture-digital.org/wb).
 
-## Markdown Tags `#markdown`
+## Markdown Tags
 
 Markdown is a lightweight markup language for creating formatted text using a plain-text editor. Below are some basic elements to get you started.
 
@@ -137,7 +137,7 @@ Create tables using pipes `|` and hyphens `-`.
 | Row 2    | Data 2   |
 ```
 
-## Juncture Tags `#juncture`
+## Juncture Tags
 
 Juncture viewers are defined by adding Juncture-specific tags to standard Markdown text.
 
@@ -147,7 +147,7 @@ The latest version of Juncture supports a simplified tagging syntax using the Ma
 
 Note that the original and simplified notations can not be used in the same Juncture essay.
 
-### Juncture Tagging Syntax `#juncture-syntax`
+### Juncture Tagging Syntax
 
 #### Original
 
@@ -173,23 +173,23 @@ In the simplified syntax, the `ve-` prefix can omitted from the tag name and par
 `image https://upload.wikimedia.org/wikipedia/commons/4/40/Sunflower_sky_backdrop.jpg title="A Sunflower"`
 ```
 
-### Juncture Tags  `#juncture-viewers`
+### Juncture Tags
 
-#### Audio Player `#audio-player`
-
-##### Parameters
-
-- [param1]: 
-- [param2]: 
-
-#### Image Compare Viewer `#image-compare`
+#### Audio Player
 
 ##### Parameters
 
 - [param1]: 
 - [param2]: 
 
-#### Image Viewer `#image-viewer`
+#### Image Compare Viewer
+
+##### Parameters
+
+- [param1]: 
+- [param2]: 
+
+#### Image Viewer
 
 The Juncture image viewer displays one or more images in an interactive IIIF viewer.  The viewer supports zooming and panning of high resolution images.  The viewer also provides captioning and attribution.
 
@@ -209,7 +209,7 @@ or
 - `caption` (or `title`): The text to use for the image caption
 - `fit`: Defines whether the image should fill the viewer or be scaled to show the entire image in the original image aspect ratio.  The value of `cover` is used to fill the viewer with the image. The value `contain` is used to show the entire image.
 
-#### Image Gallery `#image-gallery`
+#### Image Gallery
 
 ##### Parameters
 
@@ -230,43 +230,43 @@ simplified:
 `image https://upload.wikimedia.org/wikipedia/commons/4/40/Sunflower_sky_backdrop.jpg title="A Sunflower"`
 ```
 
-#### Map Viewer `#map-viewer`
+#### Map Viewer
 
 ##### Parameters
 
 - [param1]: 
 - [param2]: 
 
-#### Mermaid Diagram Viewer `#mermaid`
+#### Mermaid Diagram Viewer
 
 ##### Parameters
 
 - [param1]: 
 - [param2]: 
 
-#### Video Player `#video-player`
+#### Video Player
 
 ##### Parameters
 
 - [param1]: 
 - [param2]: 
 
-#### VisJS Diagram Viewer `#visjs`
+#### VisJS Diagram Viewer
 
 ##### Parameters
 
 - [param1]: 
 - [param2]: 
 
-### Juncture Interaction  `#juncture-interactions`
+### Juncture Interaction
 
-#### Entity Infobox `#entity-infobox`
+#### Entity Infobox
 
-#### zoomto `#zoomto`
+#### zoomto
 
-#### flyto `#flyto`
+#### flyto
 
-#### play `#play`
+#### play
 
 
 
