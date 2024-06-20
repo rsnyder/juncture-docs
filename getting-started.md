@@ -20,7 +20,7 @@ This is an example that provides Markdown and HTML code snippets and a demo of t
 
 ```
 snippet
-``image wc:AmalfiCoast11.jpg :width=50%``
+`image wc:AmalfiCoast11.jpg :width=50%`
 ```
 
 This is an example that is collapsed by default and must be opened by clicking.  This approach is often used for longer examples.
