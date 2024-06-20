@@ -1,31 +1,71 @@
-* [Home](//v3.juncture-digital.org)
-* [Docs](/)
+[Version: <ve-version></ve-version>](https://github.com/orgs/juncture-digital/discussions/4)
 
-* [Getting Started](getting-started)
-* [Quick Start](quick-start/)
+  - 
+    - <ve-auth></ve-auth>
 
-# Markdown
-- [Overview](markdown/overview)
-- [Headings](markdown/headings)
+  - Juncture
+    - [Home](/)
+    - [Quick Start](/quick-start)
+    - [Showcase](/showcase)
 
-# Juncture
+  - Tools
+    - [Editor](/embedded-editor)
+    - [Media Tool](/embedded-media)
+  
+- Getting Started
+  - [Using the Juncture Documentation](/getting-started)
+  - [Juncture Essay Rendering](/getting-started?id=juncture-essay-rendering)
+  - [Creating an essay](/getting-started?id=creating-an-essay)
+    - [Add text](/getting-started?id=add-text)
+    - [Format text with Markdown](/getting-started?id=format-text-with-markdown)
+    - [Add footnotes](/getting-started?id=add-footnotes)
+    - [Add entity popovers](/getting-started?id=add-entity-popovers)
+    - [Add Juncture viewer tags](/getting-started?id=add-juncture-viewer-tags)
+    - [Add viewer interactions](/getting-started?id=add-viewer-interactions)
+    - [Add header and footer](/getting-started?id=add-header-and-footer)
+    - [Enable annotations](/getting-started?id=enable-annotations)
 
-## Tagging Syntax
-- [Original](original)
-- [Simplified](simplified)
+- Juncture Tagging
+  - [Overview](/components/overview)
+  - [Viewer Tags](/components/overview?id=viewer-tags)
+    - [ve-media](/components/media)
+    - [ve-map](/components/map)
+    - [ve-iframe](/components/iframe)
+    - [ve-mermaid](/components/mermaid)
+    - [ve-plant-specimen](/components/plant-specimen)
+    - [ve-header](/components/header)
+    - [ve-footer](/components/footer)
+  - [Other Tags](/components/overview?id=other-tags)
+    - [ve-meta](/components/meta)
+    - [ve-annotate](/components/annotate)
 
-## Components
-- [Animated Image Viewer](animated-image-viewer)
-- [Audio Player](audio-player)
-- [Entity Info Popup](entity-popup)
-- [IFrame Viewer](iframe-viewer)
-- [Image Compare Viewer](image-compare-viewer)
-- [Image Gallery](image-gallery)
-- [Image Viewer](image-viewer)
-- [Map Viewer](map-viewer)
-- [Mermaid Viewer](mermaid-viewer)
-- [Plant Specimen Viewer](plant-specimen-viewer)
-- [TimelineJS Viewer](timelinejs-viewer)
-- [VisJS Viewer](visjs-viewer)
-- [Video Player](video-player)
+- Styling
+  - [General](/styling/general)
+  - [Viewer positioning](/styling/viewer-positioning)
+  - [Tabs](/styling/tabs)
+  - [Cards](/styling/cards)
 
+- Actions Framework
+  - [Overview](/actions?id=overview)
+  - [Marking text](/actions?id=marking-text)
+  - [Action values](/actions?id=getting-action-values)
+  - [Examples](/actions?id=examples)
+
+- How To Guides
+  - [Annotating images](/howto/annotate-images)
+  - [Setting up a media collection](/howto/setup-media-collection)
+  - [Use a historical map overlay](/howto/use-historic-maps)
+  - [Use a GeoJSON map overlay](/howto/geojson-overlay)
+  - [Hosting a Juncture website](/howto/hosting)
+  - [Using Juncture with WordPress](/howto/use-juncture-with-wordpress)
+
+- Resources
+  - [Media providers](/resources/media)
+  - [Background Information](/resources/background)
+    - [IIIF](/resources/background?id=iiif)
+    - [GeoJSON](/resources/background?id=geojson)
+
+- Misc
+  - [Contacting Us](/contact)
+  - [Problem reporting and feature requests](/issues)
+  - [Attribution](/attribution)
