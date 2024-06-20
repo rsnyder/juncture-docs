@@ -23,7 +23,7 @@ This is an example that is collapsed by default and must be opened by clicking. 
 <ve-snippet collapsible label="A collapsed example snippet - click on me to open">
     # The Amalfi Coast
 
-    `image`wc:AmalfiCoast11.jpg .right`
+    `image wc:AmalfiCoast11.jpg .right`
     
     The Amalfi Coast is a stretch of coastline in southern Italy overlooking the Tyrrhenian Sea and the Gulf of Salerno. It is located south of the Sorrentine Peninsula and north of the Cilentan Coast.
 
