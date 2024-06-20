@@ -4,9 +4,9 @@
 <body>
   <script>
     console.log(location)
-    let href = `${location.origin}/#${location.pathname}`
+    let href = `${location.origin}/#${location.pathname}${location.search}`
     console.log('Redirecting to:', href)
-    // location.href = href
+    location.href = href
   </script>
 </body>
 </html>
