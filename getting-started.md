@@ -19,7 +19,7 @@ This is an example that provides Markdown and HTML code snippets and a demo of t
 </ve-snippet>
 
 ```
-snippet
+ve-snippet
 `image wc:AmalfiCoast11.jpg :width=50%`
 ```
 
