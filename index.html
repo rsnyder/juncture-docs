@@ -6,23 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/pure.css" />
 </head>
 <body>
   <div id="app"></div>
   <script>
+    let basePath = location.hostname === 'localhost'
+      ? '/docs/'
+      : `https://raw.githubusercontent.com/rsnyder/juncture-docs/main/`
     window.$docsify = {
-      loadNavbar: true,
+      alias: { '.*/_sidebar.md': '/_sidebar.md' },
+      autoHeader: false,
+      auto2top: true,
+      basePath,
+      // coverpage: true,
+      homepage: 'README.md',
+      loadNavbar: false,
       loadSidebar: true,
-      // routerMode: 'history', // default: 'hash',
-      alias: {
-        '/.*/_navbar.md': '/_navbar.md',
-        '/.*/_sidebar.md': '/_sidebar.md'
-      }
+      logo: 'https://juncture-digital.github.io/juncture/static/images/favicon.svg',
+      name: 'Juncture',
+      // repo: 'https://github.com/juncture-digital/juncture',
+      routerMode: 'history', // hash or history
+      // themeColor: '#5B152E',
+
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markdown.min.js"></script>
   <script src="https://v3.juncture-digital.org/wc/dist/js/index.js" type="module"></script>
 </body>
 </html>
