@@ -2,12 +2,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  font-family: Roboto, sans-serif;
-  margin: 0;
-  background-color: white;
-}
-
 *,
 *:before,
 *:after {
@@ -22,6 +16,12 @@ body {
   background-color: var(--sl-color-neutral-0);
   color: var(--sl-color-neutral-900);
   line-height: var(--sl-line-height-normal);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  background-color: white;
 }
 
 /* Mobile Devices */
