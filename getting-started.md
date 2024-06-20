@@ -15,7 +15,7 @@ The documentation also includes a lot of examples demonstrating the use of Markd
 This is an example that provides Markdown and HTML code snippets and a demo of the rendered code.  The snippets are designed to be easily copy-pasted or drag-and-dropped into the Juncture editor.
 
 <ve-snippet>
-    .ve-media wc:AmalfiCoast11.jpg width=50%
+    `image wc:AmalfiCoast11.jpg :width=50%`
 </ve-snippet>
 
 This is an example that is collapsed by default and must be opened by clicking.  This approach is often used for longer examples.
@@ -23,7 +23,7 @@ This is an example that is collapsed by default and must be opened by clicking. 
 <ve-snippet collapsible label="A collapsed example snippet - click on me to open">
     # The Amalfi Coast
 
-    .ve-media wc:AmalfiCoast11.jpg right
+    `image`wc:AmalfiCoast11.jpg .right`
     
     The Amalfi Coast is a stretch of coastline in southern Italy overlooking the Tyrrhenian Sea and the Gulf of Salerno. It is located south of the Sorrentine Peninsula and north of the Cilentan Coast.
 
