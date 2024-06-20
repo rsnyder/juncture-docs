@@ -18,6 +18,11 @@ This is an example that provides Markdown and HTML code snippets and a demo of t
     `image wc:AmalfiCoast11.jpg :width=50%`
 </ve-snippet>
 
+```
+snippet
+``image wc:AmalfiCoast11.jpg :width=50%``
+```
+
 This is an example that is collapsed by default and must be opened by clicking.  This approach is often used for longer examples.
 
 <ve-snippet collapsible label="A collapsed example snippet - click on me to open">
