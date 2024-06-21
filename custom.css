@@ -48,6 +48,7 @@ body.close .content {
 a, 
 .markdown-section a {
   color: var(--sl-color-primary-600);
+  font-weight: unset;
 }
 
 a:hover {
