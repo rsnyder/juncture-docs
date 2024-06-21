@@ -15,8 +15,8 @@
     - [Add header and footer](/getting-started?id=add-header-and-footer)
     - [Enable annotations](/getting-started?id=enable-annotations)
 
-- Juncture Tagging
-  - [Overview](/components/overview)
+- [Juncture Tagging](/components/)
+  - [Overview](/components/)
   - [Viewer Tags](/components/overview?id=viewer-tags)
     - [ve-image](/components/image)
     - [ve-map](/components/map)
