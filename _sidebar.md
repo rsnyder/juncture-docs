@@ -1,16 +1,6 @@
-[Version: <ve-version></ve-version>](https://github.com/orgs/juncture-digital/discussions/4)
-
-  - 
-    - <ve-auth></ve-auth>
-
-  - Juncture
-    - [Home](/)
-    - [Quick Start](/quick-start)
-    - [Showcase](/showcase)
-
-  - Tools
-    - [Editor](/embedded-editor)
-    - [Media Tool](/embedded-media)
+- Juncture
+  - [Home](/)
+  - [Quick Start](/quick-start)
   
 - Getting Started
   - [Using the Juncture Documentation](/getting-started)
@@ -28,7 +18,7 @@
 - Juncture Tagging
   - [Overview](/components/overview)
   - [Viewer Tags](/components/overview?id=viewer-tags)
-    - [ve-media](/components/media)
+    - [ve-image](/components/image)
     - [ve-map](/components/map)
     - [ve-iframe](/components/iframe)
     - [ve-mermaid](/components/mermaid)

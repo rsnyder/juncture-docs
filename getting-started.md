@@ -18,11 +18,6 @@ This is an example that provides Markdown and HTML code snippets and a demo of t
     `image wc:AmalfiCoast11.jpg :width=50%`
 </ve-snippet>
 
-```
-ve-snippet
-`image wc:AmalfiCoast11.jpg :width=50%`
-```
-
 This is an example that is collapsed by default and must be opened by clicking.  This approach is often used for longer examples.
 
 <ve-snippet collapsible label="A collapsed example snippet - click on me to open">
@@ -172,14 +167,14 @@ The information popover is created from data and text retrieved from Wikipedia a
 
 More background on Wikidata and how Juncture uses it can be found [here](/wikidata). 
 
-An entity tag is created by enclosing the entity text in double equal signs and appending an attribute block with the associated QID.  For example, `==Vincent van Gogh=={Q5582}`.
+An entity tag is created using a Markdown link with the associated entity QID inserted in place of the URL.  For example, `[Vincent van Gogh](Q5582)`.
 
 <ve-snippet collapsible label="Basic Entity Popover Example">
     # Bedroom in Arles
     
     Van Gogh's own title for this composition was simply **The Bedroom** (French: _La Chambre à coucher_). There are three authentic versions described in his letters, easily distinguishable from one another by the pictures on the wall to the right.[^1]
     
-    **Bedroom in Arles** (French: _La Chambre à Arles_; Dutch: _Slaapkamer te Arles_) is the title given to each of three similar paintings by 19th-century Dutch Post-Impressionist painter ==Vincent van Gogh=={Q5582}.
+    **Bedroom in Arles** (French: _La Chambre à Arles_; Dutch: _Slaapkamer te Arles_) is the title given to each of three similar paintings by 19th-century Dutch Post-Impressionist painter [Vincent van Gogh](Q5582).
 </ve-snippet>
 
 <ve-snippet collapsible label="Text-only Popover Example">
@@ -187,58 +182,59 @@ An entity tag is created by enclosing the entity text in double equal signs and 
     
     Van Gogh's own title for this composition was simply **The Bedroom** (French: _La Chambre à coucher_). There are three authentic versions described in his letters, easily distinguishable from one another by the pictures on the wall to the right.[^1]
     
-    **Bedroom in Arles** (French: _La Chambre à Arles_; Dutch: _Slaapkamer te Arles_) is the title given to each of three similar paintings by 19th-century Dutch Post-Impressionist painter ==Vincent van Gogh=={description="A text only popover"}.
+    **Bedroom in Arles** (French: _La Chambre à Arles_; Dutch: _Slaapkamer te Arles_) is the title given to each of three similar paintings by 19th-century Dutch Post-Impressionist painter [Vincent van Gogh](description="A text only popover").
 </ve-snippet>
 
 ## Add Juncture Viewer Tags
 
 This is where a text narrative starts to become an interactive and engaging visual essay.  High-resolution images, maps, videos, and other visualizations can bring a text narrative to life while also providing details and context that can often be difficult to convey in text alone.  Juncture's media viewer is great at providing visual appeal, especially when using high-resolution images.  Videos and interactive maps are other visualizations often used in a visual essay.
 
-Juncture tags are used to add viewers to an essay.  The media ([ve-media](/components/media)) and map ([ve-map](/components/map)) viewers are two of the most commonly used.  Others are available and more will be added in future versions of Juncture.  
+Juncture tags are used to add viewers to an essay.  The image ([ve-image](/components/media)) and map ([ve-map](/components/map)) viewers are two of the most commonly used.  Others are available and more will be added in future versions of Juncture.  
 
-Juncture tags include a `.ve-` prefix and must be located at the beginning of a new line in the essay.  One or more attributes will often be required after the tag.  These attributes can be expressed as single values or as key-value pairs, for instance, `fit=cover` is an attribute used by the Juncture `.ve-media` tag.  The key in this string is `fit` and the value is `cover`.  This is an attribute that tells the media viewer how to display an image that has a different aspect ratio than the viewer.  Many attributes can be expressed as single values as Juncture can usually infer the purpose of the attribute by its position in the tag string or the value itself.  
+Juncture tags include are formatted as Markdown code elements (by enclosing the text in backtick characters) and must be located at the beginning of a new line in the essay.  One or more attributes will often be required for a tag.  These attributes can be expressed as single values or as key-value pairs, for instance, `fit=cover` is an attribute used by the Juncture `ve-image` tag.  The key in this string is `fit` and the value is `cover`.  This is an attribute that tells the image viewer how to display an image that has a different aspect ratio than the viewer.  Many attributes can be expressed as single values as Juncture can usually infer the purpose of the attribute by its position in the tag string or the value itself.  
 
-<ve-snippet collapsible label="Juncture media tag example">
-    .ve-media wc:Sunflower_sky_backdrop.jpg
+<ve-snippet collapsible label="Juncture image tag example">
+    `image wc:Sunflower_sky_backdrop.jpg`
 </ve-snippet>
 
 ?> Note that in the HTML version of the tag seen in the snippet above, the `src` key has been added by the Markdown-to-HTML conversion that Juncture performs.  The Markdown versions of the Juncture tags are easier to write but the Juncture tags are ultimately converted into HTML for use by the browser.  The HTML version of the Juncture tags is provided in the snippets as a convenience for users that may be using Juncture viewers in web pages not rendered by Juncture -- for instance, in a vanilla HTML document or a WordPress site.  The HTML version of the tag could be used in an essay text file but the Markdown version is always more concise and readable.
 
-<ve-snippet collapsible label="Juncture media tag with positioning attribute">
-    .ve-media wc:Sunflower_sky_backdrop.jpg right
-    This example adds the `right` positioning attribute to the `.ve-media` tag to position the media viewer on the right side of the page.  The width is set to 50% of the essay size and the height will be automatically calculated to preserve the aspect ratio of the source item.
+<ve-snippet collapsible label="Juncture image tag with positioning attribute">
+    `image wc:Sunflower_sky_backdrop.jpg .right`
+
+    This example adds the `right` positioning attribute to the `ve-image` (or 'image' when the `ve-` prefix is omitted) tag to position the image viewer on the right side of the page.  The width is set to 50% of the essay size and the height will be automatically calculated to preserve the aspect ratio of the source item.
 </ve-snippet>
 
 ## Add Viewer Interactions
 
 One of Juncture's key features is the ability to connect text passages to viewer actions.  These actions include zooming in on a particular region of an image, positioning a map over a specific location, and playing an audio or video clip at a specific time stamp.  Actions may be triggered by clicking on marked passages or by scrolling marked paragraphs into the active portion of the browser window. 
 
-After adding Juncture viewers to an essay it can often be useful to connect the viewer to associated sections of the text with one or more interactions.  These interactions include `zoom to`, `fly to`, and `play at` actions for images, maps, and audio/video clips.  The interactions are triggered by a user gesture -- clicking or hovering over a marked passage in the text.
+After adding Juncture viewers to an essay it can often be useful to connect the viewer to associated sections of the text with one or more interactions.  These interactions include `zoomto`, `flyto`, and `play` actions for images, maps, and audio/video clips.  The interactions are triggered by a user gesture -- clicking or hovering over a marked passage in the text.
 
-In the snippet below a few `zoom to` actions are defined for an image displayed by the `.ve-media` viewer.
+In the snippet below a few `zoomto` actions are defined for an image displayed by the `ve-image` viewer.
 
 <ve-snippet collapsible label="Juncture 'zoom to' interactions on an image">
-    .ve-media wc:The_Bug_Peek.jpg right
+    `image wc:The_Bug_Peek.jpg .right`
 
     Click on the text below to trigger an image `zoom to` action.
-    - ==A close-up of the bug=={1131,639,1358,904}
-    - ==Some kind of fungus on the leaf?=={1229,2533,928,618}
-    - ==Full image view=={pct:0,0,100,100}
+    - [A close-up of the bug](zoomto/1131,639,1358,904)
+    - [Some kind of fungus on the leaf?](zoomto/1229,2533,928,618)
+    - [Full image view](zoomto/pct:0,0,100,100)
 </ve-snippet>
 
-This next snippet shows the use of `fly to` actions with a `.ve-map` viewer.
+This next snippet shows the use of `flyto` actions with a `ve-map` viewer.
 
 <ve-snippet collapsible label="Juncture 'fly to' interactions on a map">
-    .ve-map 11.18,-27.77 2 right
+    `ve-map 11.18,-27.77,2 .right`
         - Q60
         - Q90
         - Q5465
 
     Click on the text below to trigger a `fly to` action.
-    - ==New York=={40.7,-74,10}
-    - ==Paris=={48.856944,2.351389,10}
-    - ==Cape Town=={-33.925,18.425,10}
-    - ==Overview=={11.18,-27.77,2}
+    - [New York](flyto/40.7,-74,10)
+    - [Paris](flyto/48.856944,2.351389,10)
+    - [Cape Town](flyto/-33.925,18.425,10)
+    - [Overview](flyto/11.18,-27.77,2)
 </ve-snippet>
 
 More information on the Juncture interactions framework can be found [here](/actions).
@@ -253,9 +249,9 @@ More information on the Juncture header component can be found [here](/component
 
 Depending on the purpose of an essay, enabling annotations may be desired.  This can be easily done by adding the `.ve-annotate` tag anywhere in an essay.
 
-`ve-annotate` adds the [Hypothes.is](https://web.hypothes.is/) annotation client to an essay.  The Hypothes.is annotation tool is [widely used in education](https://web.hypothes.is/education/).  It is open source and based on standards developed by the W3C Web Annotation Working Group. 
+``ve-annotate`` adds the [Hypothes.is](https://web.hypothes.is/) annotation client to an essay.  The Hypothes.is annotation tool is [widely used in education](https://web.hypothes.is/education/).  It is open source and based on standards developed by the W3C Web Annotation Working Group. 
 
-The `.ve-annotate` does not use any attributes.  Simply add the tag anywhere in your essay text and the annotation client will be added to the rendered essay.  That's it.  Using the annotation client from a rendered essay will require logging into Hypothes.is.  New Hypothes.is users will need to [signup for a free Hypothes.is account](https://web.hypothes.is/start/).
+The ``ve-annotate`` does not use any attributes.  Simply add the tag anywhere in your essay text and the annotation client will be added to the rendered essay.  That's it.  Using the annotation client from a rendered essay will require logging into Hypothes.is.  New Hypothes.is users will need to [signup for a free Hypothes.is account](https://web.hypothes.is/start/).
 
 
 ?> Note that the annotation client is not added to an essay when displayed in an example snippet or in preview mode in the Juncture editor.  It is only added to the rendered version of an essay.  
@@ -267,6 +263,6 @@ The example below demonstrates how to add the `.ve-annotate` tag to an essay.
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-    .ve-annotate
+    `ve-annotate`
 
 </ve-snippet>
