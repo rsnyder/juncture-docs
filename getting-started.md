@@ -36,16 +36,16 @@ The primary function performed by Juncture is to turn a plain text file stored i
 
 As an example, consider a Juncture user with the Github username of **snagsby**.  Snagsby has created a Juncture visual essay in his essays repository about his favorite Dickens novel, "Bleak House".  The text for the essay has been created in a file named "bleak-house/README.md" located at the root of his Github essays repository.
 - The Github URL for snagsby's essay file is https://github.com/snagsby/essays/blob/main/bleak-house/README.md
-- The URL for rendered Juncture essay would be https://juncture-digital.org/snagsby/essays/bleak-house
+- The URL for rendered Juncture essay would be https://v3.juncture-digital.org/snagsby/essays/bleak-house
 
-All Juncture essays are associated with a URL of the form `https://juncture-digital.org/<USERNAME>/<REPOSITORY>/<PATH><ESSAY-ID>`, where:
+All Juncture essays are associated with a URL of the form `https://v3.juncture-digital.org/<USERNAME>/<REPOSITORY>/<PATH><ESSAY-ID>`, where:
 - `<USERNAME>` and `<REPOSITORY>` is the Github username and repository hosting the file.
 - `<PATH>` is an optional path to a Github folder that contains the essay folder or file.  This is not used for essays stored at the root of a repository.
 - `<ESSAY-ID>` is an identifier associated with the essay.  By convention, this identifier is lower-case text (characters or numbers) without punctuation, using dash characters (`-`) to replace spaces. 
 
-In addition to the `juncture-digital.org` URL that is available for any Juncture essay, an essay may also be associated with a custom domain.  For example, our friend snagsby has obtained the domain `snagsby.net` for a personal site and connected it to his Github essays repository.  With this custom domain, the domain https://snagsby.net can also be used for his essays, for instance, https://snagsby.net/bleak-house.  When using a custom domain the URL path will not include the Github username or repository name.
+In addition to the `v3.juncture-digital.org` URL that is available for any Juncture essay, an essay may also be associated with a custom domain.  For example, our friend snagsby has obtained the domain `snagsby.net` for a personal site and connected it to his Github essays repository.  With this custom domain, the domain https://snagsby.net can also be used for his essays, for instance, https://snagsby.net/bleak-house.  When using a custom domain the URL path will not include the Github username or repository name.
 
-?> Note that snagsby could have also created his essay in a text file named `bleak-house.md`.  A Juncture essay associated with the identifier bleak-house could be created in either a file named with the desired identifier (bleak-house, in this case) and a `.md` extension, **or** in a file named `README.md` located in a Github folder named with the essay identifier, for instance (`bleak-house/README.md`).  Either of these approaches would result in a Juncture essay accessed by the URL https://juncture-digital.org/snagsby/essays/bleak-house.  The advantage of using the folder-based approach is that this provides a convenient place for storing other files that may eventually be associated with an essay (for instance, image annotations or map overlays).  The folder approach is generally recommended for all but the simplest essays.
+?> Note that snagsby could have also created his essay in a text file named `bleak-house.md`.  A Juncture essay associated with the identifier bleak-house could be created in either a file named with the desired identifier (bleak-house, in this case) and a `.md` extension, **or** in a file named `README.md` located in a Github folder named with the essay identifier, for instance (`bleak-house/README.md`).  Either of these approaches would result in a Juncture essay accessed by the URL https://v3.juncture-digital.org/snagsby/essays/bleak-house.  The advantage of using the folder-based approach is that this provides a convenient place for storing other files that may eventually be associated with an essay (for instance, image annotations or map overlays).  The folder approach is generally recommended for all but the simplest essays.
 
 ?> Juncture essay text files must include a `.md` file extension.  While the file is a plain text the .md extension signals that it contains  [Markdown](https://www.markdownguide.org/) text formatting tags.  When using the folder-based approach for creating a Juncture essay text file, the file must be named `README.md`, following the Github convention for naming a primary file in a folder.
 
@@ -107,7 +107,7 @@ The most commonly used Markdown tags are
 - **heading** - To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use should correspond to the heading level. For example, to create a heading level three, use three number signs.  Note that the number signs for a heading must start at the beginning of a line.
 - **bold** - To bold text, add two asterisks or underscores before and after a word or phrase. To bold the middle of a word for emphasis, add two asterisks without spaces around the letters.
 - **italic** -To italicize text, add one asterisk or underscore before and after a word or phrase. To italicize the middle of a word for emphasis, add one asterisk without spaces around the letters.
-- **link** - To create a link, enclose the link text in brackets (e.g., [Juncture]) and then follow it immediately with the URL in parentheses (e.g., (https://juncture-digital.org)).
+- **link** - To create a link, enclose the link text in brackets (e.g., [Juncture]) and then follow it immediately with the URL in parentheses (e.g., (https://v3.juncture-digital.org)).
 - **blockquote** - To create a blockquote, add a > in front of a paragraph.
 - **list** - Lists can be ordered or unordered.  To create an ordered list, add line items with numbers followed by periods. The numbers don’t have to be in numerical order, but the list should start with the number one.  To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in front of line items. Indent one or more items to create a nested list.
 
@@ -213,7 +213,7 @@ After adding Juncture viewers to an essay it can often be useful to connect the 
 
 In the snippet below a few `zoomto` actions are defined for an image displayed by the `ve-image` viewer.
 
-<ve-snippet collapsible label="Juncture 'zoom to' interactions on an image">
+<ve-snippet collapsible label="Juncture 'zoomto' interactions on an image">
     `image wc:The_Bug_Peek.jpg .right`
 
     Click on the text below to trigger an image `zoom to` action.
@@ -224,8 +224,8 @@ In the snippet below a few `zoomto` actions are defined for an image displayed b
 
 This next snippet shows the use of `flyto` actions with a `ve-map` viewer.
 
-<ve-snippet collapsible label="Juncture 'fly to' interactions on a map">
-    `ve-map 11.18,-27.77,2 .right`
+<ve-snippet collapsible label="Juncture 'flyto' interactions on a map">
+    `map 11.18,-27.77,2 .right`
         - Q60
         - Q90
         - Q5465
@@ -251,12 +251,12 @@ Depending on the purpose of an essay, enabling annotations may be desired.  This
 
 ``ve-annotate`` adds the [Hypothes.is](https://web.hypothes.is/) annotation client to an essay.  The Hypothes.is annotation tool is [widely used in education](https://web.hypothes.is/education/).  It is open source and based on standards developed by the W3C Web Annotation Working Group. 
 
-The ``ve-annotate`` does not use any attributes.  Simply add the tag anywhere in your essay text and the annotation client will be added to the rendered essay.  That's it.  Using the annotation client from a rendered essay will require logging into Hypothes.is.  New Hypothes.is users will need to [signup for a free Hypothes.is account](https://web.hypothes.is/start/).
+The `ve-annotate` does not use any attributes.  Simply add the tag anywhere in your essay text and the annotation client will be added to the rendered essay.  That's it.  Using the annotation client from a rendered essay will require logging into Hypothes.is.  New Hypothes.is users will need to [signup for a free Hypothes.is account](https://web.hypothes.is/start/).
 
 
 ?> Note that the annotation client is not added to an essay when displayed in an example snippet or in preview mode in the Juncture editor.  It is only added to the rendered version of an essay.  
 
-The example below demonstrates how to add the `.ve-annotate` tag to an essay.
+The example below demonstrates how to add the `ve-annotate` tag to an essay.
 
 <ve-snippet collapsible label="Adding the Hypothes.is annotation client to an essay">
     # My Essay

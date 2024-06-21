@@ -45,7 +45,8 @@ body.close .content {
 }
 */
 
-a {
+a, 
+.markdown-section a {
   color: var(--sl-color-primary-600);
 }
 
