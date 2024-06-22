@@ -19,7 +19,7 @@
     }
 </style>
 
-The `.ve-plant-specimen` tag is used to display one or more plant specimens obtained from [JSTOR Global Plants](https://plants.jstor.org/).  The component is a wrapper for the `.ve-media` viewer which is used to display the high-resolution specimen images.
+The `ve-plant-specimen` tag is used to display one or more plant specimens obtained from [JSTOR Global Plants](https://plants.jstor.org/).  The component is a wrapper for the `.ve-media` viewer which is used to display the high-resolution specimen images.
 
 ## Attributes
 
@@ -50,17 +50,17 @@ The `.ve-plant-specimen` tag is used to display one or more plant specimens obta
 ## Examples
 
 <ve-snippet collapsible label="Plant specimen for QID Q11575">
-.ve-plant-specimen Q11575
+    `plant-specimen Q11575`
 </ve-snippet>
 
 <ve-snippet collapsible label="Plant specimen with right positioning">
-.ve-plant-specimen Q11575 right
+    `plant-specimen Q11575 .right`
 </ve-snippet>
 
 <ve-snippet collapsible label="Showing multiple specimen images">
-.ve-plant-specimen Q11575 max=3
+    `plant-specimen Q11575 max=3`
 </ve-snippet>
 
 <ve-snippet collapsible label="Plant specimen for Taxon Name 'Zea mays'">
-.ve-plant-specimen taxon-name="Zea mays"
+    `plant-specimen taxon-name="Zea mays"`
 </ve-snippet>

@@ -19,7 +19,7 @@
     }
 </style>
 
-The `.ve-iframe` tag allows arbitrary web pages to be embedded in an essay.  The tag is a light wrapper around the standard HTML [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) tag that is used to embed another document within the current HTML document.
+The `ve-iframe` tag allows arbitrary web pages to be embedded in an essay.  The tag is a light wrapper around the standard HTML [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) tag that is used to embed another document within the current HTML document.
 
 ## Attributes
 
@@ -111,17 +111,17 @@ The following attributes are passed through to the native `iframe` element.  The
 ### Basic
 
 <ve-snippet collapsible label="Embedding a KnightLab Timeline">
-.ve-iframe https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1xuY4upIooEeszZ_lCmeNx24eSFWe0rHe9ZdqH2xqVNk&font=Default&lang=en&initial_zoom=2&height=100%
+    `iframe https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1xuY4upIooEeszZ_lCmeNx24eSFWe0rHe9ZdqH2xqVNk&font=Default&lang=en&initial_zoom=2&height=100% :height=500px`
 </ve-snippet>
 
 <ve-snippet collapsible label="Embedding a KnightLab Timeline with right positioning">
-.ve-iframe https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1xuY4upIooEeszZ_lCmeNx24eSFWe0rHe9ZdqH2xqVNk&font=Default&lang=en&initial_zoom=2&height=100% right
+    `iframe https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1xuY4upIooEeszZ_lCmeNx24eSFWe0rHe9ZdqH2xqVNk&font=Default&lang=en&initial_zoom=2&height=100% .right :height=500px`
 </ve-snippet>
 
 <ve-snippet collapsible label="Wikimedia Commons picture of the day">
-.ve-iframe https://commons.wikimedia.org/wiki/Commons:Picture_of_the_day/Today
+    `iframe https://commons.wikimedia.org/wiki/Commons:Picture_of_the_day/Today :height=500px`
 </ve-snippet>
 
 <ve-snippet collapsible label="Embedding a Book from Internet Archive">
-.ve-iframe https://archive.org/embed/slaveryinunit00ballcha/page/172/mode/1up
+    `iframe https://archive.org/embed/slaveryinunit00ballcha/page/172/mode/1up :height=500px`
 </ve-snippet>

@@ -175,35 +175,35 @@ A Georeferenced image layer is defined by including an allmaps ID in a ve-map la
 
 ### Layer examples
 
-<ve-snippet collapsible label="Location defined with coordinates">
+<ve-snippet collapsible label="Location marker defined with coordinates">
     ```
     map 42.281,-83.748,9
     - 42.281,-83.748
     ```
 </ve-snippet>
 
-<ve-snippet collapsible label="Location defined with coordinates and label">
+<ve-snippet collapsible label="Location marker defined with coordinates and label">
     ```
     map 42.281,-83.748,10
     - 42.281,-83.748 "Ann Arbor, Michigan"
     ```
 </ve-snippet>
 
-<ve-snippet collapsible label="Location defined with coordinates, label, and description">
+<ve-snippet collapsible label="Location marker defined with coordinates, label, and description">
     ```
     map 42.281,-83.748,9
     - 42.281,-83.748 "Ann Arbor, Michigan" "Ann Arbor is a city in the U.S. state of Michigan and the county seat of Washtenaw County."
     ```
 </ve-snippet>
 
-<ve-snippet collapsible label="Location defined with coordinates, label, description, and image">
+<ve-snippet collapsible label="Location marker defined with coordinates, label, description, and image">
     ```
     map 42.281,-83.748,9
     - 42.281,-83.748 "Ann Arbor, Michigan" "Ann Arbor is a city in the U.S. state of Michigan and the county seat of Washtenaw County." wc:Ann_Arbor_sunset_2018.jpg
     ```
 </ve-snippet>
 
-<ve-snippet collapsible label="Location defined with Wikidata ID">
+<ve-snippet collapsible label="Location marker defined with Wikidata ID">
     ```
     map 42.281,-83.748,10
     - Q485172
@@ -211,7 +211,7 @@ A Georeferenced image layer is defined by including an allmaps ID in a ve-map la
 </ve-snippet>
 
 <ve-snippet collapsible label="Map with multiple basemaps">
-    `map 37.16032,-79.45313,5 :width=50% basemaps=OpenStreetMap,Esri_WorldPhysical,Stamen_Watercolor`
+    `map 37.16032,-79.45313,5 basemaps=OpenStreetMap,Esri_WorldPhysical,USGS_USTopo`
 </ve-snippet>
 
 This example includes a terrain basemap with multiple markers for cities and national parks.  Each location is defined using a Wikidata ID.
@@ -256,9 +256,7 @@ This builds on the previous example by organizing the location markers into two 
 
     This example uses [an image from Wikimedia commons](https://commons.wikimedia.org/wiki/File:Double-O-Arch_Arches_National_Park_2.jpg) for a marker.  The image used in this example includes embedded Exif (Exchangeable image file format) data with geographic coordinates.
 
-    Hover over the marker or click here to see the image.
-
-    ==The marker image will also appear when hovering over this text.  Clicking on this text will also cause the map to zoom in on the marker location.=={flyto=wc:Double-O-Arch_Arches_National_Park_2.jpg,14}
+    Click on the marker or click here to see the image.
 </ve-snippet>
 
 <ve-snippet collapsible label="Map with a GeoJSON overlay">
@@ -308,7 +306,8 @@ This builds on the previous example by organizing the location markers into two 
 </ve-snippet>
 
 <ve-snippet collapsible label="Custom GeoJSON with outline only">
-    ```map 44.50434,-85.39673,7
+    ```
+    map 44.50434,-85.39673,7
     - geojson=https://raw.githubusercontent.com/glynnbird/usstatesgeojson/master/michigan.geojson layer="State of Michigan" color=blue weight=3 fillOpacity=0
     ```
 </ve-snippet>

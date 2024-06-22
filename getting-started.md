@@ -202,7 +202,7 @@ Juncture tags include are formatted as Markdown code elements (by enclosing the 
 <ve-snippet collapsible label="Juncture image tag with positioning attribute">
     `image wc:Sunflower_sky_backdrop.jpg .right`
 
-    This example adds the `right` positioning attribute to the `ve-image` (or 'image' when the `ve-` prefix is omitted) tag to position the image viewer on the right side of the page.  The width is set to 50% of the essay size and the height will be automatically calculated to preserve the aspect ratio of the source item.
+    This example adds the `right` positioning attribute to the `ve-image` tag to position the image viewer on the right side of the page.  The width is set to 50% of the essay size and the height will be automatically calculated to preserve the aspect ratio of the source item.
 </ve-snippet>
 
 ## Add Viewer Interactions
@@ -216,7 +216,7 @@ In the snippet below a few `zoomto` actions are defined for an image displayed b
 <ve-snippet collapsible label="Juncture 'zoomto' interactions on an image">
     `image wc:The_Bug_Peek.jpg .right`
 
-    Click on the text below to trigger an image `zoom to` action.
+    Click on the text below to trigger an image `zoomto` action.
     - [A close-up of the bug](zoomto/1131,639,1358,904)
     - [Some kind of fungus on the leaf?](zoomto/1229,2533,928,618)
     - [Full image view](zoomto/pct:0,0,100,100)

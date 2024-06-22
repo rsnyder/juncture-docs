@@ -1,8 +1,4 @@
-- Juncture
-  - [Home](/)
-  - [Quick Start](/quick-start)
-  
-- Getting Started
+- [Getting Started](/getting-started)
   - [Using the Juncture Documentation](/getting-started)
   - [Juncture Essay Rendering](/getting-started?id=juncture-essay-rendering)
   - [Creating an essay](/getting-started?id=creating-an-essay)
@@ -43,11 +39,9 @@
 
 - How To Guides
   - [Annotating images](/howto/annotate-images)
-  - [Setting up a media collection](/howto/setup-media-collection)
   - [Use a historical map overlay](/howto/use-historic-maps)
   - [Use a GeoJSON map overlay](/howto/geojson-overlay)
   - [Hosting a Juncture website](/howto/hosting)
-  - [Using Juncture with WordPress](/howto/use-juncture-with-wordpress)
 
 - Resources
   - [Media providers](/resources/media)
