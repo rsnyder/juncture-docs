@@ -26,9 +26,9 @@ An HTML `style` tag with CSS properties may be added in the essay text.
 
 <ve-snippet collapsible label="Custom styling using HTML style tag">
 
-<style>
-    #juncture h1 { color: red; }
-</style>
+    <style>
+        h1 { color: red; }
+    </style>
 
     # Heading
 
@@ -42,11 +42,12 @@ In this example a `style` tag is used to load and use an external font.
 
 <style>
     @import url(//fonts.googleapis.com/css?family=Montserrat);
-    #juncture { font-family: Montserrat; }
-    #juncture h1 { color: red; }
+    .test { font-family: Montserrat; }
+    h1 { color: red; }
 </style>
 
     # Heading
+    `.test`
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 

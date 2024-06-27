@@ -1,4 +1,4 @@
-# ve-image
+# Image Viewer
 
 <style> 
     .markdown-section h3 ~ p > strong > a { color: crimson; font-size: 110%; text-decoration: none; }
@@ -198,17 +198,7 @@ The example below includes 2 renderings of the same image, a normal (uncropped) 
 In the example below the options attribute is used to format a static image.  In this example, the image is cropped, rotated, and displayed in grayscale.
 
 <ve-snippet collapsible label="Static image using options attribute">
-`image wc:Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg static options=3801,5853,7002,5553/full/90/gray`
-</ve-snippet>
-
-### Multiple images
-
-<ve-snippet collapsible label="2 images in compare mode">
-```
-ve-image
-- wc:Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg
-- wc:Vincent_van_Gogh_-_Vincent's_Bedroom_in_Arles_-_Letter_Sketch_October_1888.jpg
-```
+`image wc:Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg static options=3801,5853,7002,5553/max/90/gray`
 </ve-snippet>
 
 ### Viewer positioning

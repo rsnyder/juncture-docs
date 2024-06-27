@@ -13,7 +13,8 @@
 
 - [Juncture Tagging](/components/)
   - [Overview](/components/)
-  - [Viewer Tags](/components/overview?id=viewer-tags)
+  - [Viewers](/components/overview?id=viewers)
+    - [ve-gallery](/components/gallery)
     - [ve-image](/components/image)
     - [ve-map](/components/map)
     - [ve-iframe](/components/iframe)

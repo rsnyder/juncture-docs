@@ -44,6 +44,8 @@
     }
 </style>
 
+# Basemaps
+
 The table below lists the basemaps recognized by Juncture.  To use these basemaps add the `basemaps=<NAMES>` attribute to the `.ve-map` tag.  Tne basemaps value is one or more basemap names.  Multiple names are comma delimited.  The first name will be the default basemap.
 
 | Name | Min Zoom | Max Zoom |
