@@ -62,11 +62,11 @@ Juncture was developed and is maintained by [![JSTOR](https://raw.githubusercont
 
 # Welcome to Juncture
 
-**Juncture** is a fafdasfa suite of tools and services that enable anyone to easily create engaging web pages with rich visualizations, including interactive images, videos, maps, and more.  
+**Juncture** is a suite of tools and services that enable anyone to easily create engaging web pages with rich visualizations, including interactive images, videos, maps, and more.  
 
-Juncture is developed and maintained by the friendly folks at [JSTOR Labs](https://labs.jstor.org) and [grew out of a project](https://www.doaks.org/research/mellon-initiatives/plant-humanities-initiative) that used visual essays for a form of digital storytelling.  Visual essays are text narratives augmented with interactive visualizations providing depth and context.  
+The original version of Juncture was developed by the friendly folks at [JSTOR Labs](https://labs.jstor.org) and [grew out of a project](https://www.doaks.org/research/mellon-initiatives/plant-humanities-initiative) that used visual essays for a form of digital storytelling.  Visual essays are text narratives augmented with interactive visualizations providing depth and context.  
 
-This version of Juncture represents the second generation of the Juncture concept.  It's a complete rewrite of the Juncture code base and documentation.  The rendering engine in version 2 is backward compatible with visual essays written for version 1, so if you're an existing Juncture user, no worries, your Juncture essays will continue to work.  
+This current version of Juncture represents a complete rewrite of the Juncture code base and documentation.  The rendering engine is backward compatible with visual essays written for version 1, so if you're an existing Juncture user, no worries, your Juncture essays will continue to work.  
 
 ?> Documentation for Juncture version 1 can be found [here](https://github.com/jstor-labs/juncture/wiki).
 

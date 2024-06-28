@@ -17,9 +17,9 @@
     }
 </style>
 
-# ve-header
+# Header
 
-The `.ve-header` tag is used to define an optional header that appears at the start of the essay.  The header can be used to:
+The `ve-header` tag is used to define an optional header that appears at the start of the essay.  The header can be used to:
 
 - Define a title and subtitle for the essay
 - Display a banner image
@@ -60,28 +60,32 @@ Menu items are defined in a Markdown list of links following the `.ve-header` ta
 ### Basic
 
 <ve-snippet collapsible label="A basic header with a title">
-    .ve-header "Essay Title"
+    `ve-header "Essay Title"`
 </ve-snippet>
 
 ### Logo
 
 <ve-snippet collapsible label="Header with a logo, url and custom background color">
-    .ve-header "Essay Title" logo=https://raw.githubusercontent.com/juncture-digital/juncture/main/static/images/juncture-logo.png url=# background=#5B152E
+    `header "Essay Title" logo=https://raw.githubusercontent.com/juncture-digital/juncture/main/static/images/juncture-logo.png url=# background-color=#5B152E`
 </ve-snippet>
 
 ### Contact
 
 <ve-snippet collapsible label="Header with a contact form" height=10rem>
-    .ve-header Example background=#5B152E contact-form-title="Contact form for Some Site" contact-subject="Contact form for Some Site" contact=someone@somesite.org
-        - [Contact Us](contact)
+    ```
+    header Example background-color=#5B152E
+    - [Contact Us](contact)
+    ```
 </ve-snippet>
 
 ### Search
 
 <ve-snippet collapsible label="Header with a search form">
-    .ve-header Example background=#5B152E search-domain=kent-maps.online
-        - [Home](/home)
-        - [About](/about)
+    ```
+    header Example background-color=#5B152E search-domain=kent-maps.online
+    - [Home](/home)
+    - [About](/about)
+    ```
 </ve-snippet>
 
 ### Background
@@ -89,18 +93,20 @@ Menu items are defined in a Markdown list of links following the `.ve-header` ta
 This example shows the use of a basic header with a title and custom background color.  In this example the custom background color `LightCoral` is used.  Any valid HTML color name or hex code may be used for a background color.  HTML supports 140 [standard color names](https://www.w3schools.com/colors/colors_names.asp).  The full range of colors can be at a number of online sites, including  [https://htmlcolorcodes.com](https://htmlcolorcodes.com/)
 
 <ve-snippet collapsible label="A basic header with a custom background color">
-    .ve-header "Essay Title" background=LightCoral
+    `header "Essay Title" background-color=LightCoral`
 </ve-snippet>
 
 <ve-snippet collapsible label="A header with a background image">
-    .ve-header "Essay Title" wc:Sunflower.jpg
+    `header "Essay Title" wc:Sunflower.jpg`
 </ve-snippet>
 ### Sticky header
 
 A sticky header defined with positional attributes and navigation menu options in a nested Markdown list.
 
 <ve-snippet collapsible fill label="A sticky header with a cropped background image and menu">
-    .ve-header "Essay Title" wc:Sunflower.jpg "Essay subtitle" pct:10,25,80,60 center sticky
-        - [Home](/)
-        - [About](/about)
+    ```
+    header "Essay Title" wc:Sunflower.jpg "Essay subtitle" pct:10,25,80,60 center .sticky
+    - [Home](/)
+    - [About](/about)
+    ```
 </ve-snippet>

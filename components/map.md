@@ -44,7 +44,11 @@
     }
 </style>
 
-The `ve-map` tag creates a map viewer that displays a base map with optional map layers.  The map viewer supports zooming and panning.  The base map defaults to [OpenStreetMap](https://www.openstreetmap.org/) but can easily be set to a number of [others](#baselayers).  
+The `ve-map` tag creates a map viewer that displays a base map with optional map layers.  The map viewer supports zooming and panning.  The base map defaults to [OpenStreetMap](https://www.openstreetmap.org/) but can easily be set to a number of [others](/components/basemaps). 
+
+- [Overview](#)
+- [Attributes](#attributes)
+- [Examples](#examples)
 
 The base map can be augmented with one or more optional map layers. Juncture supports 3 types of layers:
 
