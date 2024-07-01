@@ -12,8 +12,12 @@
 <body>
   <div id="app"></div>
   <script>
+    console.log(location)
     let mode = location.hostname === 'localhost' ? 'dev' : 'prod'
+    let useLocalWC = mode === 'dev' && location.port === '3300'
     let basePath = mode === 'prod' ? `https://raw.githubusercontent.com/rsnyder/juncture-docs/main/` : '/'
+
+    console.log(`mode=${mode} useLocalWC=${useLocalWC} basePath=${basePath}`)
 
     window.$docsify = {
       alias: { '.*/_sidebar.md': '/_sidebar.md' },
@@ -29,7 +33,7 @@
     }
 
     let wcScript = document.createElement('script')
-    wcScript.src = mode === 'prod' ? 'https://v3.juncture-digital.org/wc/dist/js/index.js' : 'http://localhost:5173/main.ts'
+    wcScript.src = useLocalWC ? 'http://localhost:5173/main.ts' : 'https://v3.juncture-digital.org/wc/dist/js/index.js'
     wcScript.type = 'module'
     document.body.appendChild(wcScript)
   </script>

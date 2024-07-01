@@ -1,7 +1,7 @@
 # IFrame Viewer
 
 <style> 
-    .markdown-section h3 ~ p > strong > a { color: crimson; font-size: 110%; text-decoration: none; }
+    .markdown-section h2 ~ p > strong > a { color: crimson; font-size: 110%; text-decoration: none; }
     .markdown-section table { 
         margin-left:3rem; 
         width: calc(100% - 6rem); 
@@ -23,25 +23,9 @@ The `ve-iframe` tag allows arbitrary web pages to be embedded in an essay.  The 
 
 ## Attributes
 
-### Basic attributes
-
 **[src](#basic)** (_string_):  The URL of the page to embed. Use a value of about:blank to embed an empty page that conforms to the [same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy#inherited_origins). Also note that programmatically removing an iframe's src attribute (e.g. via [Element.removeAttribute()](https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute)) causes about:blank to be loaded in the frame in Firefox (from version 65), Chromium-based browsers, and Safari/iOS.
 
-### Viewer positioning attributes
-
-**[left](/styling/viewer-positioning)** (_boolean_):  Position the viewer in the left half of the viewport and scale the width proportionally.  Text will wrap around the viewer unless the _sticky_ attribute is included.
-
-**[right](/styling/viewer-positioning)** (_boolean_):  Position the viewer in the right half of the viewport and scale the width proportionally. Text will wrap around the viewer unless the _sticky_ attribute is included.
-
-**[full](/styling/viewer-positioning)** (_boolean_):  Use the fill width of the browser viewport for the image.  Scale the image height proportional to the source image.  By default, the image will be auto-sized such that its height is not more than 40% of the viewport height.
-
-**[sticky](/styling/viewer-positioning)** (_boolean_):  The _sticky_ attribute causes the viewer to "stick" to the top of the viewing area when the essay text is scrolled.  The viewer will stick in position until all content in the enclosing section has scrolled through the viewing area.
-
-**[height](/styling/viewer-positioning)** (_string_):  A requested size for the  viewer height.  The default behavior is to use the full width of the available window and scale the viewer height to retain the aspect ratio of the source item (image or video).
-
-**[width](/styling/viewer-positioning)** (_string_):  A requested size for the  viewer width.  The default behavior is to use the full width of the available window.
-
-### Expert attributes
+***Expert attributes***
 
 The following attributes are passed through to the native `iframe` element.  These attributes should not normally be needed.
 

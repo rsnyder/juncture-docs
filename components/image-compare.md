@@ -1,7 +1,7 @@
-# Image Gallery
+# Image Compare
 
 <style> 
-    .markdown-section h3 ~ p > strong > a { color: crimson; font-size: 110%; text-decoration: none; }
+    .markdown-section h2 ~ p > strong > a { color: crimson; font-size: 110%; text-decoration: none; }
     .markdown-section table { 
         margin-left:3rem; 
         width: calc(100% - 6rem); 
@@ -19,15 +19,8 @@
     }
 </style>
 
+The `ve-image-compare` creates a viewer that is able to display 2 high-resolution in a stacked compare viewer.
+
 ## Examples
 
-<ve-snippet collapsible label="Basic gallery">
-```
-gallery
-wc:Six_Sunflowers_1888.jpg
-wc:Sunflowersagnaneamt.jpg
-wc:Vincent_Willem_van_Gogh_128.jpg
-wc:Sunflower_in_Sri_Lanka.jpg
-wc:Helianthus_annuus_flower.jpg
-```
-</ve-snippet>
+Coming...

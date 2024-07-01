@@ -58,7 +58,7 @@ The base map can be augmented with one or more optional map layers. Juncture sup
 
 ## Attributes
 
-### Core attributes 
+### Core map attributes 
 
 **[basemaps](/components/basemaps)** (_string_):  The name of an optional base map to be used.  A list of supported base maps can be seen [here](/components/basemaps)
 
@@ -77,20 +77,6 @@ The base map can be augmented with one or more optional map layers. Juncture sup
 **[zoom](#basic-map-examples)** (_number_):  Defines the initial zoom level of the rendered map.
 
 **[zoom-on-click](#basic-map-examples)** (_boolean_):  Increase zoom level on a location after clicking on a location marker pin or shape. 
-
-### Viewer positioning attributes
-
-**[left](/styling/viewer-positioning)** (_boolean_):  Position the viewer in the left half of the viewport and scale the width proportionally.  Text will wrap around the viewer unless the _sticky_ attribute is included.
-
-**[right](/styling/viewer-positioning)** (_boolean_):  Position the viewer in the right half of the viewport and scale the width proportionally. Text will wrap around the viewer unless the _sticky_ attribute is included.
-
-**[full](/styling/viewer-positioning)** (_boolean_):  Use the fill width of the browser viewport for the image.  Scale the image height proportional to the source image.  By default, the image will be auto-sized such that its height is not more than 40% of the viewport height.
-
-**[sticky](/styling/viewer-positioning)** (_boolean_):  The _sticky_ attribute causes the viewer to "stick" to the top of the viewing area when the essay text is scrolled.  The viewer will stick in position until all content in the enclosing section has scrolled through the viewing area.
-
-**[height](/styling/viewer-positioning)** (_string_):  A requested size for the  viewer height.  The default behavior is to use the full width of the available window and scale the viewer height to retain the aspect ratio of the source item (image or video).
-
-**[width](/styling/viewer-positioning)** (_string_):  A requested size for the  viewer width.  The default behavior is to use the full width of the available window.
 
 ### Layer attributes
 
@@ -134,7 +120,7 @@ The base map can be augmented with one or more optional map layers. Juncture sup
 
 ## Layers
 
-Map layers are defined in a Markdown list following the `.ve-map` tag.  Items in the layer list may define markers, GeoJSON file URLs or [allmaps](https://allmaps.org/) IDs for georeferenced images. Note that a blank space must be present between the `-` in the Markdown list and the layer item. Please view the examples at the bottom of the page for clarification if needed. 
+Map layers are defined in a Markdown list following the `ve-map` tag.  Items in the layer list may define markers, GeoJSON file URLs or [allmaps](https://allmaps.org/) IDs for georeferenced images. Note that a blank space must be present between the `-` in the Markdown list and the layer item. Please view the examples at the bottom of the page for clarification if needed. 
 
 ### Marker layer
 
