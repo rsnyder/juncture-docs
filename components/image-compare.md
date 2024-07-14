@@ -23,4 +23,10 @@ The `ve-image-compare` creates a viewer that is able to display 2 high-resolutio
 
 ## Examples
 
-Coming...
+<ve-snippet collapsible label="Bedroom in Arles">
+```
+compare caption="Comparison of Van Gogh Sketch and Painting"
+wc:Vincent_van_Gogh_-_Vincent's_Bedroom_in_Arles_-_Letter_Sketch_October_1888.jpg
+wc:Vincent_van_Gogh’s_famous_painting,_digitally_enhanced_by_rawpixel-com_49.jpg
+```
+</ve-snippet>

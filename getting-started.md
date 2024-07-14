@@ -202,7 +202,7 @@ Juncture tags include are formatted as Markdown code elements (by enclosing the 
 <ve-snippet collapsible label="Juncture image tag with positioning attribute">
     `image wc:Sunflower_sky_backdrop.jpg .right`
 
-    This example adds the `right` positioning attribute to the `ve-image` tag to position the image viewer on the right side of the page.  The width is set to 50% of the essay size and the height will be automatically calculated to preserve the aspect ratio of the source item.
+    This example adds the **right** positioning attribute to the **ve-image** tag to position the image viewer on the right side of the page.  The width is set to 50% of the essay size and the height will be automatically calculated to preserve the aspect ratio of the source item.
 </ve-snippet>
 
 ## Add Viewer Interactions

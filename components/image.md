@@ -39,6 +39,7 @@ To use more than one image with a `ve-image` the Markdown block code syntax is u
 <ve-snippet collapsible label="Multiple images">
 ```
 image 
+wc:Vincent_van_Gogh_-_Vincent's_Bedroom_in_Arles_-_Letter_Sketch_October_1888.jpg
 wc:Sunflower_sky_backdrop.jpg
 wc:Vincent_van_Gogh_-_Zonnebloemen_-_Google_Art_Project.jpg
 wc:Vincent_van_Gogh_-_Sunflowers_(1888,_National_Gallery_London).jpg
