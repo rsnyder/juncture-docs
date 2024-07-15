@@ -23,6 +23,7 @@
     - [Mermaid Diagram Viewer](/components/mermaid)
     - [Plant Specimen Viewer](/components/plant-specimen)
     - [Video Player](/components/video)
+    - [VisJS Diagram Viewer](/components/visjs)
   - [Other Juncture Components](/components/overview?id=other-tags)
     - [Annotator](/components/annotate)
     - [Footer](/components/footer)
