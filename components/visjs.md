@@ -20,9 +20,15 @@
 
 </style>
 
+he `ve-visjs` tag uses the [vis.js](https://visjs.org/) JavaScript library to create diagram visualizations. With this tag, you can create network, timeline, and other types of diagrams.
+
 ## Examples
 
-<ve-snippet collapsible label="Basic VisJS diagram">
+### Network Diagram
+
+When creating a VisJS network diagram the nodes and edges are defined in a Markdown table and referenced in the `ve-visjs` tag using the `id` attribute assigned to each table.
+
+<ve-snippet collapsible label="VisJS network diagram">
 
     |id |     label     |
     |---|---------------|
@@ -42,6 +48,26 @@
     | 3 | 3  |
     `#edges`
 
-    `ve-visjs edges=edges nodes=nodes caption="VisJS Graph"`
+    `ve-visjs edges=edges nodes=nodes caption="VisJS Network"`
+
+</ve-snippet>
+
+### Timeline Diagram
+
+When creating a VisJS timeline the timeline data is defined in a Markdown table and referenced in the `ve-visjs` tag using the `id` attribute assigned to the table.
+
+<ve-snippet collapsible label="VisJS timeline diagram">
+
+    |id | content |   start    |    end     | type  |
+    |---|---------|------------|------------|-------|
+    | 1 | Item 1  | 2014-04-20 |            |       |
+    | 2 | Item 2  | 2014-04-14 |            |       |
+    | 3 | Item 3  | 2014-04-18 |            |       |
+    | 4 | Item 4  | 2014-04-16 | 2014-04-19 |       |
+    | 5 | Item 5  | 2014-04-25 |            |       |
+    | 6 | Item 6  | 2014-04-25 |            | point |
+    `#timeline`
+
+    `ve-visjs timeline=timeline caption="VisJS Timeline"`
 
 </ve-snippet>
