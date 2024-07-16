@@ -22,6 +22,20 @@
 
 he `ve-visjs` tag uses the [vis.js](https://visjs.org/) JavaScript library to create diagram visualizations. With this tag, you can create network, timeline, and other types of diagrams.
 
+## Attributes
+
+### Network attributes 
+
+**[edges](#network-diagram)** (_string_):  The table id defining the network edges
+
+**[hierarchical](#network-diagram)** (_boolean_):  Requests hierarchical layout
+
+**[nodes](#network-diagram)** (_string_):  The table id defining the network nodes
+
+### Timeline attributes 
+
+**[timeline](#timeline-diagram)** (_string_):  The table id defining the timeline data
+
 ## Examples
 
 ### Network Diagram
@@ -48,7 +62,31 @@ When creating a VisJS network diagram the nodes and edges are defined in a Markd
     | 3 | 3  |
     `#edges`
 
-    `ve-visjs edges=edges nodes=nodes caption="VisJS Network"`
+    `ve-visjs edges=edges nodes=nodes caption="VisJS Network" :height=400px`
+
+</ve-snippet>
+
+<ve-snippet collapsible label="VisJS network diagram with hierarchical layout">
+
+    |id |     label     |
+    |---|---------------|
+    | 1 | Node 1        |
+    | 2 | Node 2        |
+    | 3 | Node 3        |
+    | 4 | Node 4        |
+    | 5 | Node 5        |
+    `#nodes`
+
+    |from|to |
+    |----|---|
+    | 1 | 3  |
+    | 1 | 2  |
+    | 2 | 4  |
+    | 2 | 5  |
+    | 3 | 3  |
+    `#edges`
+
+    `ve-visjs edges=edges nodes=nodes caption="VisJS Network" hierarchical :height=600px`
 
 </ve-snippet>
 
