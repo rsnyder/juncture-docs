@@ -40,3 +40,21 @@ The `ve-audio` tag creates a viewer that is able to play audio content.
 **[start](#examples)** (_number_):  Time position to begin playing resource.
 
 ## Examples
+
+<ve-snippet collapsible label="Audio file hosted on Wikimedia Commons">
+`audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers"`
+</ve-snippet>
+
+<ve-snippet collapsible label="Audio file hosted on Wikimedia Commons, with autoplay">
+`audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers" autoplay`
+</ve-snippet>
+
+<ve-snippet collapsible label="Audio file hosted on Wikimedia Commons, with start and end">
+`audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers"  start=1:00 end=1:20`
+</ve-snippet>
+
+<ve-snippet collapsible label="Audio file hosted on Wikimedia Commons, with text trigger">
+    `audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers" .right`
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. [Excepteur](play/1:00) sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</ve-snippet>
