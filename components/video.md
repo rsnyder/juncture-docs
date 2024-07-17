@@ -45,8 +45,12 @@ The `ve-video` tag creates a viewer that is able to play video content, includin
 
 ## Examples
 
-<ve-snippet collapsible label="YouTube video">
+<ve-snippet collapsible label="YouTube streaming video">
 `video Zy3K2Lcw7hQ`
+</ve-snippet>
+
+<ve-snippet collapsible label="YouTube video and start time">
+`video Zy3K2Lcw7hQ start=60`
 </ve-snippet>
 
 <ve-snippet collapsible label="YouTube video with autoplay">
@@ -55,4 +59,34 @@ The `ve-video` tag creates a viewer that is able to play video content, includin
 
 <ve-snippet collapsible label="YouTube video with autoplay and start/end times">
 `video Zy3K2Lcw7hQ autoplay start=60 end=70`
+</ve-snippet>
+
+<ve-snippet collapsible label="YouTube video, with text trigger">
+    `video Zy3K2Lcw7hQ .right`
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. [Excepteur](play/1:00) sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+</ve-snippet>
+
+<ve-snippet collapsible label="Wikimedia Commons hosted video">
+`video wc:Van_Gogh_Alive.webm`
+</ve-snippet>
+
+<ve-snippet collapsible label="Wikimedia Commons hosted video and start time">
+`video wc:Van_Gogh_Alive.webm start=30`
+</ve-snippet>
+
+<ve-snippet collapsible label="Wikimedia Commons hosted video with autoplay">
+`video wc:Van_Gogh_Alive.webm autoplay`
+</ve-snippet>
+
+<ve-snippet collapsible label="Wikimedia Commons hosted video with autoplay and start/end times">
+`video wc:Van_Gogh_Alive.webm autoplay start=30 end=40`
+</ve-snippet>
+
+<ve-snippet collapsible label="Wikimedia Commons hosted video, with text trigger">
+    `video wc:Van_Gogh_Alive.webm .right`
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. [Excepteur](play/30) sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 </ve-snippet>
