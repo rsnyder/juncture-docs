@@ -19,13 +19,13 @@
     }
 </style>
 
-## Attributes
+## Carousel Attributes
 
-**[autoplay](#basic)** (_boolean_) :  
+**[autoplay](#basic)** (_boolean_) :  The carousel will automatically advance when the `autoplay` attribute is used. To change how long a slide is shown before advancing, set autoplay-interval to the desired number of milliseconds. For best results, use the loop attribute when autoplay is enabled. Note that autoplay will pause while the user interacts with the carousel.
 
-**[caption](#basic)** (_string_) :  The carousel will automatically advance when the `autoplay` attribute is used. To change how long a slide is shown before advancing, set autoplay-interval to the desired number of milliseconds. For best results, use the loop attribute when autoplay is enabled. Note that autoplay will pause while the user interacts with the carousel.
+**[caption](#basic)** (_string_) :  A caption for the carousel viewer.  Image-specific captions are set in the image list.
 
-**[height](#basic)** (_number__) :  
+**[height](#basic)** (_number_) :  
 
 **[loop](#basic)** (_boolean_) :  By default, the carousel will not advanced beyond the first and last slides. You can change this behavior and force the carousel to “wrap” with the `loop` attribute.
 
@@ -33,7 +33,18 @@
 
 **[pagination](#basic)** (_boolean_) :  Use the `pagination` attribute to show the total number of slides and the current slide as a set of interactive dots.
 
-**[width](#basic)** (_number__) :  
+**[width](#basic)** (_number_) :  
+
+## Images list
+
+An image definition for each carousel image follows the tag headline.  At a minimum, a URL to the image IIIF manifest must be provided.  Other optional attributes may be specified as needed.
+
+### Image Attributes
+
+**[caption](#basic)** (_string_) :  Image-specific caption.
+
+**[src](#basic)** (_string_) :  URL for image IIIF manifest.
+
 
 ## Examples
 
