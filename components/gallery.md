@@ -24,10 +24,11 @@
 <ve-snippet collapsible label="Basic gallery">
 ```
 gallery
-wc:Six_Sunflowers_1888.jpg
-wc:Sunflowersagnaneamt.jpg
-wc:Vincent_Willem_van_Gogh_128.jpg
-wc:Sunflower_in_Sri_Lanka.jpg
-wc:Helianthus_annuus_flower.jpg
+wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+wc:Amalfi_Coast_(247891371).jpeg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 ```
 </ve-snippet>
