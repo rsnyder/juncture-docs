@@ -1,4 +1,4 @@
-# Image Gallery
+# Image Carousel
 
 <style> 
     .markdown-section h2 ~ p > strong > a { color: crimson; font-size: 110%; text-decoration: none; }
@@ -18,6 +18,8 @@
         text-align:center !important;
     }
 </style>
+
+The `ve-carousel` displays an arbitrary number of images along a horizontal or vertical axis.  The `ve-carousel` is a Juncture wrapper for the [Shoelace](https://shoelace.style/) [sl-carousel](https://shoelace.style/components/carousel) component.
 
 ## Carousel Attributes
 
