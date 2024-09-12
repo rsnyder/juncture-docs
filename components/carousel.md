@@ -21,9 +21,18 @@
 
 ## Carousel Attributes
 
+**[aspect-ratio](#basic)** (_string_) :  Use the `aspect-ratio` attribute to customize the size of the carousel’s viewport from the default value of **16/9**.  Other values include **3/2** and **1/1**.
+
 **[autoplay](#basic)** (_boolean_) :  The carousel will automatically advance when the `autoplay` attribute is used. To change how long a slide is shown before advancing, set autoplay-interval to the desired number of milliseconds. For best results, use the loop attribute when autoplay is enabled. Note that autoplay will pause while the user interacts with the carousel.
 
 **[caption](#basic)** (_string_) :  A caption for the carousel viewer.  Image-specific captions are set in the image list.
+
+**[fit](#basic)** (_string_) :  The `fit` attribute is used to define how an image should be resized to fit its container.
+
+- **contain** (_default_) - The image keeps its aspect ratio, but is resized to fit within the available space.
+- **cover** - The image keeps its aspect ratio and fills the the available space. The image will be clipped to fit.
+
+**[gallery](#basic)** (_boolean_) :  The `gallery` attribute syncs the active slide with a set of thumbnails, creating a gallery-style carousel.
 
 **[height](#basic)** (_number_) :  
 
@@ -31,7 +40,16 @@
 
 **[navigation](#basic)** (_boolean_) :  Use the `navigation` attribute to show previous and next buttons.
 
+**[orientation](#basic)** (_string_) :  Setting the `orientation` attribute to **vertical** will render the carousel in a vertical layout. If the content of your slides vary in height, you will need to set amn explicit height or max-height on the carousel using CSS.
+
 **[pagination](#basic)** (_boolean_) :  Use the `pagination` attribute to show the total number of slides and the current slide as a set of interactive dots.
+
+**[scroll-hint](#basic)** (_boolean_) :  Use the `scroll-hint` attribute to add inline padding in horizontal carousels and block padding in vertical carousels. This will make the closest slides slightly visible, hinting that there are more items in the carousel.
+
+**[slides-per-page](#basic)** (_number_) :  The `slides-per-page` attribute makes it possible to display multiple slides at a time. You can also use the `slides-per-move` attribute to advance more than once slide at a time, if desired.
+
+**[slides-per-move](#basic)** (_number_) :  Generally used in conjunction with the `slides-per-page` attribute to advance more than one slide at a time.
+
 
 **[width](#basic)** (_number_) :  
 
@@ -48,11 +66,12 @@ An image definition for each carousel image follows the tag headline.  At a mini
 
 ## Examples
 
-<ve-snippet collapsible label="Basic carousel">
+<ve-snippet collapsible label="Basic Carousel with navigation controls">
 ```
-carousel navigation caption="A Basic Carousel"
-wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg "Image 1 caption"
-wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg "Image 2 caption"
+carousel navigation
+wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+wc:Amalfi_Coast_Italy_6.JPG
+wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
 wc:Amalfi_Coast_(247891371).jpeg
 wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
 wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
@@ -60,11 +79,51 @@ wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 ```
 </ve-snippet>
 
-<ve-snippet collapsible label="Basic carousel with pagination">
+<ve-snippet collapsible label="Carousel with caption and navigation controls">
 ```
-carousel navigation pagination caption="A Basic Carousel"
-wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg "Image 1 caption"
-wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg "Image 2 caption"
+carousel navigation caption="Carousel with navigation controls"
+wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+wc:Amalfi_Coast_Italy_6.JPG
+wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+wc:Amalfi_Coast_(247891371).jpeg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+```
+</ve-snippet>
+
+<ve-snippet collapsible label="Carousel with caption, navigation and pagination controls">
+```
+carousel navigation pagination caption="Carousel with navigation and pagination controls"
+wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+wc:Amalfi_Coast_Italy_6.JPG
+wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+wc:Amalfi_Coast_(247891371).jpeg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+```
+</ve-snippet>
+
+<ve-snippet collapsible label="Carousel with autoplay and loop">
+```
+carousel autoplay loop
+wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg 
+wc:Amalfi_Coast_Italy_6.JPG
+wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+wc:Amalfi_Coast_(247891371).jpeg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+```
+</ve-snippet>
+
+<ve-snippet collapsible label="Carousel with gallery">
+```
+carousel gallery navigation caption="Carousel with gallery"
+wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+wc:Amalfi_Coast_Italy_6.JPG
+wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
 wc:Amalfi_Coast_(247891371).jpeg
 wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
 wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
