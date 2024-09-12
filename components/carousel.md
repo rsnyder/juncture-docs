@@ -138,7 +138,7 @@ wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 ```
 </ve-snippet>
 
-<ve-snippet collapsible label="Carousel with 'cover' image fit">
+<ve-snippet collapsible label="Carousel with gallery and 'cover' image fit">
 ```
 carousel gallery navigation fit=cover caption="Carousel with 'cover' fit'"
 wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
