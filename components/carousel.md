@@ -61,7 +61,12 @@ An image definition for each carousel image follows the tag headline.  At a mini
 
 ### Image Attributes
 
-**[caption](#basic)** (_string_) :  Image-specific caption.
+**[caption](#basic)** (_string_) :  Image-specific caption.  Overrides the default caption generated from the `label` property in the IIIF manifest for the image.
+
+**[fit](#basic)** (_string_) :  The `fit` attribute is used to define how an image should be resized to fit its container.  This image-specific attribute overrides the `fit` attribute defined in the carousel headline.
+
+- **contain** (_default_) - The image keeps its aspect ratio, but is resized to fit within the available space.
+- **cover** - The image keeps its aspect ratio and fills the the available space. The image will be clipped to fit.
 
 **[src](#basic)** (_string_) :  URL for image IIIF manifest.
 
@@ -123,6 +128,19 @@ wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 <ve-snippet collapsible label="Carousel with gallery">
 ```
 carousel gallery navigation caption="Carousel with gallery"
+wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+wc:Amalfi_Coast_Italy_6.JPG
+wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+wc:Amalfi_Coast_(247891371).jpeg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+```
+</ve-snippet>
+
+<ve-snippet collapsible label="Carousel with 'cover' image fit">
+```
+carousel gallery navigation fit=cover caption="Carousel with 'cover' fit'"
 wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
 wc:Amalfi_Coast_Italy_6.JPG
 wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
