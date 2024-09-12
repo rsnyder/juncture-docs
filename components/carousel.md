@@ -17,6 +17,10 @@
         font-weight:bold !important;
         text-align:center !important;
     }
+    h3 {
+        margin-top: 2em !important;
+    }
+
 </style>
 
 The `ve-carousel` displays an arbitrary number of images along a horizontal or vertical axis.  The `ve-carousel` is a Juncture wrapper for the [Shoelace](https://shoelace.style/) [sl-carousel](https://shoelace.style/components/carousel) component.
@@ -72,6 +76,32 @@ An image definition for each carousel image follows the tag headline.  At a mini
 
 
 ## Examples
+
+### Juncture v1
+
+```html
+<param ve-carousel navigation caption="An image carousel" src="wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg">
+<param ve-carousel src="wc:Amalfi_Coast_Italy_6.JPG">
+<param ve-carousel src="wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg">
+<param ve-carousel src="wc:Amalfi_Coast_(247891371).jpeg">
+<param ve-carousel src="wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg">
+<param ve-carousel src="wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg">
+<param ve-carousel src="wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg">
+```
+
+<ve-carousel navigation caption="An image carousel">
+    <ul>
+        <li>src=wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg</li>
+        <li>src=wc:Amalfi_Coast_Italy_6.JPG</li>
+        <li>src=wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg</li>
+        <li>src=wc:Amalfi_Coast_(247891371).jpeg</li>
+        <li>src=wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg</li>
+        <li>src=wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg</li>
+        <li>src=wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg</li>
+    </ul>
+</ve-carousel>
+
+### Juncture v3
 
 <ve-snippet collapsible label="Basic Carousel with navigation controls">
 ```

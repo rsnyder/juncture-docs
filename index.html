@@ -33,8 +33,8 @@
     }
 
     let wcScript = document.createElement('script')
-    wcScript.src = useLocalWC ? 'http://localhost:5173/main.ts' : 'https://cdn.jsdelivr.net/npm/juncture-digital@3.1/js/index.js'
-    // wcScript.src = useLocalWC ? 'http://localhost:5173/main.ts' : 'https://v3.juncture-digital.org/wc/dist/js/index.js'
+    // wcScript.src = useLocalWC ? 'http://localhost:5173/main.ts' : 'https://cdn.jsdelivr.net/npm/juncture-digital@3.1/js/index.js'
+    wcScript.src = useLocalWC ? 'http://localhost:5173/main.ts' : 'https://v3.juncture-digital.org/wc/dist/js/index.js'
     wcScript.type = 'module'
     document.body.appendChild(wcScript)
   </script>
