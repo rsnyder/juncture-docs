@@ -27,9 +27,9 @@ By default, the `ve-image` viewer will render an image with full interactivity (
 
 The example below demonstrates the use of the ve-image viewer with the same image in static and dynamic (default) modes.  In both cases, the caption bar and information popover are rendered in the same way.  The core difference is in how the image is displayed in the viewer pane.  In the dynamic version hovering over the image will reveal the image controls in the top-left portion of the viewer pane.  These controls allow the image to be zoomed, panned, and rotated.  The mouse and/or keyboard can be used to pan the image.  In the viewer with the static image these controls are not available.  However, in static mode, clicking on the image will cause the image to be redisplayed in a modal window.  The image viewer in the modal window displays the image in dynamic mode with zooming, panning, and rotation enabled.
 
-<ve-snippet collapsible label="Default vs static image">
+<ve-snippet collapsible label="Basic image">
 `image wc:Sunflower_sky_backdrop.jpg "Default image viewer" .left`
-`image wc:Sunflower_sky_backdrop.jpg "Static Image" .right static`
+
 </ve-snippet>
 
 ## Multiple images
@@ -124,23 +124,18 @@ The following attributes are only applicable for single images in `static` mode 
 </ve-snippet>
 
 <ve-snippet collapsible label="Full-width image with rotation">
-`image wc:Sunflower.jpg .left`
 `image wc:Sunflower.jpg .right rotate=90 caption="Sunflower, rotated"`
 </ve-snippet>
 
 The example below includes 2 .ve-image viewers displaying the same image from Wikimedia Commons.  The first viewer uses the full manifest URL.  The second uses the short-form support by the Juncture IIIF server. 
 
-<ve-snippet collapsible label="Images with full and short-form IIIF URLs">
-`image https://iiif.juncture-digital.org/wc:Sunflower.jpg/manifest.json .left`
+<ve-snippet collapsible label="Images short-form IIIF URL">
 `image wc:Sunflower.jpg .right`
 </ve-snippet>
 
 The example below includes 2 renderings of the same image, a normal (uncropped) rendering, and a cropped version using the `region` attribute.  The cropped version also shows the use of a custom caption.
 
-<ve-snippet collapsible label="Cropped image using region">
-`image wc:Sunflower.jpg .left`
-`image wc:Sunflower.jpg .right region=pct:25,25,50,50 caption="Sunflower, cropped"`
-</ve-snippet>
+
 
 ### Static images
 

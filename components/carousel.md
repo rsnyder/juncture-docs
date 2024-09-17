@@ -77,106 +77,93 @@ An image definition for each carousel image follows the tag headline.  At a mini
 
 ## Examples
 
-### Juncture v1
-
-```html
-<param ve-carousel navigation caption="An image carousel" src="wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg">
-<param ve-carousel src="wc:Amalfi_Coast_Italy_6.JPG">
-<param ve-carousel src="wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg">
-<param ve-carousel src="wc:Amalfi_Coast_(247891371).jpeg">
-<param ve-carousel src="wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg">
-<param ve-carousel src="wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg">
-<param ve-carousel src="wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg">
-```
-
-<ve-carousel navigation caption="An image carousel">
-    <ul>
-        <li>src=wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg</li>
-        <li>src=wc:Amalfi_Coast_Italy_6.JPG</li>
-        <li>src=wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg</li>
-        <li>src=wc:Amalfi_Coast_(247891371).jpeg</li>
-        <li>src=wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg</li>
-        <li>src=wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg</li>
-        <li>src=wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg</li>
-    </ul>
-</ve-carousel>
-
-### Juncture v3
-
 <ve-snippet collapsible label="Basic Carousel with navigation controls">
 ```
 carousel navigation
-wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
-wc:Amalfi_Coast_Italy_6.JPG
-wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
-wc:Amalfi_Coast_(247891371).jpeg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+- wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+- wc:Amalfi_Coast_Italy_6.JPG
+- wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+- wc:Amalfi_Coast_(247891371).jpeg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 ```
 </ve-snippet>
 
 <ve-snippet collapsible label="Carousel with caption and navigation controls">
 ```
-carousel navigation caption="Carousel with navigation controls"
-wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
-wc:Amalfi_Coast_Italy_6.JPG
-wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
-wc:Amalfi_Coast_(247891371).jpeg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+carousel "Carousel with navigation controls" navigation
+- wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+- wc:Amalfi_Coast_Italy_6.JPG
+- wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+- wc:Amalfi_Coast_(247891371).jpeg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 ```
 </ve-snippet>
 
 <ve-snippet collapsible label="Carousel with caption, navigation and pagination controls">
 ```
 carousel navigation pagination caption="Carousel with navigation and pagination controls"
-wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
-wc:Amalfi_Coast_Italy_6.JPG
-wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
-wc:Amalfi_Coast_(247891371).jpeg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+- wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+- wc:Amalfi_Coast_Italy_6.JPG
+- wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+- wc:Amalfi_Coast_(247891371).jpeg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 ```
 </ve-snippet>
 
 <ve-snippet collapsible label="Carousel with autoplay and loop">
 ```
 carousel autoplay loop
-wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg 
-wc:Amalfi_Coast_Italy_6.JPG
-wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
-wc:Amalfi_Coast_(247891371).jpeg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+- wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+- wc:Amalfi_Coast_Italy_6.JPG
+- wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+- wc:Amalfi_Coast_(247891371).jpeg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 ```
 </ve-snippet>
 
 <ve-snippet collapsible label="Carousel with gallery">
 ```
 carousel gallery navigation caption="Carousel with gallery"
-wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
-wc:Amalfi_Coast_Italy_6.JPG
-wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
-wc:Amalfi_Coast_(247891371).jpeg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+- wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+- wc:Amalfi_Coast_Italy_6.JPG
+- wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+- wc:Amalfi_Coast_(247891371).jpeg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 ```
 </ve-snippet>
 
 <ve-snippet collapsible label="Carousel with gallery and 'cover' image fit">
 ```
 carousel gallery navigation fit=cover caption="Carousel with 'cover' fit'"
-wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
-wc:Amalfi_Coast_Italy_6.JPG
-wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
-wc:Amalfi_Coast_(247891371).jpeg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+- wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+- wc:Amalfi_Coast_Italy_6.JPG
+- wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+- wc:Amalfi_Coast_(247891371).jpeg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+```
+</ve-snippet>
+
+<ve-snippet collapsible label="Carousel with image-specific attributes">
+```
+carousel "Carousel with image-specific attributes" navigation
+- wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg "Custom caption for image 1"
+- wc:Amalfi_Coast_Italy_6.JPG "Custom caption for image 2 and fit=cover" fit=cover
+- wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg "*Caption* with **Markdown** formatting"
+- wc:Amalfi_Coast_(247891371).jpeg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 ```
 </ve-snippet>
