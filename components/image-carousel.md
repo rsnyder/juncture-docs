@@ -25,7 +25,7 @@
 
 The `ve-carousel` displays an arbitrary number of images along a horizontal or vertical axis.  The `ve-carousel` is a Juncture wrapper for the [Shoelace](https://shoelace.style/) [sl-carousel](https://shoelace.style/components/carousel) component.
 
-## Carousel Attributes
+## Attributes
 
 **[aspect-ratio](#basic)** (_string_) :  Use the `aspect-ratio` attribute to customize the size of the carousel’s viewport from the default value of **16/9**.  Other values include **3/2** and **1/1**.
 
@@ -55,7 +55,6 @@ The `ve-carousel` displays an arbitrary number of images along a horizontal or v
 **[slides-per-page](#basic)** (_number_) :  The `slides-per-page` attribute makes it possible to display multiple slides at a time. You can also use the `slides-per-move` attribute to advance more than once slide at a time, if desired.
 
 **[slides-per-move](#basic)** (_number_) :  Generally used in conjunction with the `slides-per-page` attribute to advance more than one slide at a time.
-
 
 **[width](#basic)** (_number_) :  
 

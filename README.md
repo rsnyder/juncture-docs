@@ -46,10 +46,7 @@ p {
 - Use web-based resources and your own content
 - Image and text annotation tools
 - IIIF-enabled features for using high-quality, attributed digital objects
-- WordPress compatible
 - Open source and built on open tools and data formats
-
-Juncture was developed and is maintained by [![JSTOR](https://raw.githubusercontent.com/juncture-digital/juncture/main/static/images/labs.jpg)](https://labs.jstor.org)
 
 </div>
 <div class="splash-end">

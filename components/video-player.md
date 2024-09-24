@@ -8,7 +8,7 @@
         border:1px solid #555;
     }
     .markdown-section td, .markdown-section th {
-        border:1px solid #555;
+        border:1px solid #555;  fvi
         padding: 8px;
         line-height: 1.2;
     }
@@ -19,7 +19,7 @@
     }
 </style>
 
-The `ve-video` tag creates a viewer that is able to play video content, including streaming video from YouTube and Vimeo.
+The `ve-video` tag creates a viewer that is able to play video content, including streaming video from YouTube.
 
 ## Attributes
 
@@ -33,15 +33,17 @@ The `ve-video` tag creates a viewer that is able to play video content, includin
 
 **[end](#examples)** (_number_): Time position to stop playing resource.
 
-**[id](#examples)** (_number_): The YouTube or Vimeo ID of the image to stream.
+**[vid](#examples)** (_number_): The YouTube ID of the image to stream.
 
 **[muted](#examples)** (_boolean_):  Mute resource when initially played.
 
 **[poster](#examples)** (_string_): Image displayed in viewer before video plays.
 
-**[src](#examples)** (_url_) :  The URL to the IIIF manifest for a video file to play.
+**[src](#examples)** (_url_) :  The YouTube URL or a URL to the IIIF manifest for a video file to play.
 
 **[start](#examples)** (_number_):  Time position to begin playing resource.
+
+**[sync](#examples)** (_boolean_): Synchronize playback with timestamps in text headline.
 
 ## Examples
 

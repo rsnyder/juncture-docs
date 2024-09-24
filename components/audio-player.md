@@ -25,8 +25,6 @@ The `ve-audio` tag creates a viewer that is able to play audio content.
 
 ### Resource attributes
 
-**[alt](#examples)** (_string_):  The text to use in the _alt_ tag used by screen readers.  If not provided an _alt_ tag is automatically generated from the IIIF manifest label property or inferred from the filename.
-
 **[autoplay](examples)** (_boolean_):  Automatically play audio resource when the media viewer is loaded.
 
 **[caption](#examples)** (_string_): Defines the text to use for a caption that is optionally displayed below the audio player.
@@ -38,6 +36,9 @@ The `ve-audio` tag creates a viewer that is able to play audio content.
 **[src](#examples)** (_url_) :  The URL to the IIIF manifest for a audio file to play.
 
 **[start](#examples)** (_number_):  Time position to begin playing resource.
+
+**[sync](#examples)** (_boolean_): Synchronize playback with timestamps in text headline.
+
 
 ## Examples
 

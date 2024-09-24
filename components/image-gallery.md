@@ -25,6 +25,17 @@ The `ve-gallery` displays an arbitrary number of image thumbnails in a grid.  By
 
 **[show-captions](#basic)** (_boolean_) : Displays the image caption below the thumbnail in the grid.
 
+## Images list
+
+An image definition for each carousel image follows the tag headline.  At a minimum, a URL to the image IIIF manifest must be provided in the `src` attribute.  An optional `caption` may be provided to replace the caption obtained from the IIIF manifest.  Note that this caption will only show if the `show-caption` attribute is set in the tag headline.
+
+### Image Attributes
+
+**[caption](#basic)** (_string_) :  Image-specific caption.  Overrides the default caption generated from the `label` property in the IIIF manifest for the image.
+
+**[src](#basic)** (_string_) :  URL for image IIIF manifest.
+
+
 ## Examples
 
 <ve-snippet collapsible label="Basic gallery">

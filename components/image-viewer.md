@@ -55,13 +55,13 @@ wc:Sunflowersagnaneamt.jpg
 
 ## Attributes
 
+Many of the image-specific attributes used in the ve-image viewer are based on the [IIIF Image API](https://iiif.io/api/image/2.1/).  The attribute values are often directly passed to the IIIF server hosting the images.  For detailed explanations of the attributes and possible values, the [IIIF image request parameters](https://iiif.io/api/image/2.1/#image-request-parameters) documentation should be consulted.
+
 **[src](#basic)** (_url_) :  The URL to the IIIF manifest for the item to display in the viewer.  This attribute is omitted when using the viewer in multi-image mode.  This attribute may also be omitted in single-image mode when QIDs are in scope.  When a src attribute is not specified the most relevant (closest) QID to the tag is used to generate an IIIF manifest URL.  More information on QID use can be found in the [Wikidata](#wikidata) section.
 
 **[alt](#basic)** (_string_):  The text to use in the _alt_ tag used by screen readers.  If not provided an _alt_ tag is automatically generated from the manifest label property.
 
 **[caption](#basic)** (_string_):  When a single image is defined using the `src` attribute a caption is automatically generated using the label property found in the associated IIIF manifest.  This caption is displayed in the caption bar at the bottom of the viewer by default (this can be inhibited by adding a `no-caption` attribute).  Specifying a caption in single-image mode will override this with the value provided in this attribute.  In all other viewer modes (multi-image, audio, and video) no caption is displayed in the caption bar.  Defining a caption with this attribute will cause the caption bar to be displayed with the provided text.
-
-Many of the image-specific attributes used in the ve-image viewer are based on the [IIIF Image API](https://iiif.io/api/image/2.1/).  The attribute values are often directly passed to the IIIF server hosting the images.  For detailed explanations of the attributes and possible values, the [IIIF image request parameters](https://iiif.io/api/image/2.1/#image-request-parameters) documentation should be consulted.
 
 **[static](static-images)** (_boolean_):  A static image is returned instead of an interactive image with deep-zoom and panning.
 
@@ -114,6 +114,24 @@ The following attributes are only applicable for single images in `static` mode 
 | default | The image is returned using the server’s default quality (e.g. color, gray or bitonal) for the image. |
 
 **[options](#static-images)** (_string_):  The _options_ attribute combines the `region`, `size`, `rotation`, `quality`, and `format` attributes into a single value.  
+
+## Images list
+
+When multiple images are to be displayed an image definition for each image follows the tag headline.  At a minimum, a URL to the image IIIF manifest must be provided in the `src` attribute.  Other optional attributes may be specified as needed.
+
+### Image List Attributes
+
+**[caption](#basic)** (_string_) :  Image-specific caption.  Overrides the default caption generated from the `label` property in the IIIF manifest for the image.
+
+**[fit](#basic)** (_string_) :  The `fit` attribute is used to define how an image should be resized to fit its container.  This image-specific attribute overrides the `fit` attribute defined in the carousel headline.
+
+- **contain** (_default_) - The image keeps its aspect ratio, but is resized to fit within the available space.
+- **cover** - The image keeps its aspect ratio and fills the the available space. The image will be clipped to fit.
+
+**[seq](#basic)** (_number_):  A number defining the image to use in a multi-image manifest.  If not specified the default value is _1_.
+
+**[src](#basic)** (_string_) :  URL for image IIIF manifest.
+
 
 ## Examples
 
