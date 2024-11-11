@@ -6,7 +6,8 @@
     console.log(location)
     let href = `${location.origin}/#${location.pathname}${location.search}`
     console.log('Redirecting to:', href)
-    location.href = href
+    document.body.innerHTML = `<h1>Redirecting to <a href="${href}">${href}</a></h1>`
+    // location.href = href
   </script>
 </body>
 </html>

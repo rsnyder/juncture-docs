@@ -25,9 +25,9 @@ The `ve-animated-image` tag creates a viewer that is able to play animated GIFs.
 
 ### Resource attributes
 
-**[autoplay](examples)** (_boolean_):  Automatically play video resource when the media viewer is loaded.
+**[autoplay](examples)** (_boolean_):  Automatically play animation when image is displayed.
 
-**[caption](#examples)** (_string_): Defines the text to use for a caption that is displayed below the video player.
+**[caption](#examples)** (_string_): Defines the text to use for a caption that is displayed below the image.
 
 **[src](#examples)** (_url_) :  The URL to the animated GIF image.  Wikimedia Commons short form URLs are supported.
 

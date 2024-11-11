@@ -81,7 +81,7 @@ Many of the image-specific attributes used in the ve-image viewer are based on t
 
 **Static image attributes**
 
-The following attributes are only applicable for single images in `static` mode or for images in a multi-image mode (`grid` or `compare`).
+The following attributes are only applicable for single images in `static` mode.
 
 **[region](#static-images)** (_string_):  The region attribute defines the rectangular portion of the full image to be returned. The region can be specified by pixel coordinates, percentage, or by the value “full”, which specifies that the entire image should be returned.
 
